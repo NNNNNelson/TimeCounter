@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TimeCounter Web Page</title>
+	<style>
+		body {
+			background-color: black;
+			color: #00FF00;
+		}
+		
+		.button {
+			width: 60%;
+			height: 20%;
+			font-size: 1.5em;
+		}
+		
+		#timeDisplaying {
+			font-size: 4em;
+			margin-top: 10%;
+			margin-bottom: 10%;
+			width: 90%;
+			height: 19%;
+			margin-left: 5%;;
+		}
+		
+		#maxcount {
+			font-size: 0.3em;
+		}
+		
+		#controlPanel {
+			margin-left: 5%;
+			font-size: 3em;
+			text-align: center;
+			float: left;
+			width: 40%;
+		}
+		
+		#displayPanel {
+			width: 40%;
+			font-size: 2.7em;
+			text-align: left;
+			float: left;
+			margin-left: 5%;
+		}
+		
+		#lowSecond {
+			font-size: 0.5em;
+		}
+		
+		#displayPanelLowSecond {
+			font-size: 0.7em;
+		}
+	</style>
+	<script src="TimeCounter.js"></script>
+</head>
+<body onload="boot()">
+	<!-- <p id="emPercent"></p> -->
+	<div id="wholeBody">
+		<div id="controlPanel">
+			<p id="timeDisplaying">0:0:0.<span id="lowSecond">0</span></p>
+			<button class="button" id="start" onclick="start()">Start</button>
+			<p></p>
+			<button class="button" onclick="recordTime()">Record Time<br /><span id="maxcount">(Maximum 10 records)</span></button>
+			
+			<p></p>
+			<button class="button" onclick="restart()">Restart</button>
+			<!-- <p id="start" onmousedown="mousedown(this)" onmouseup="mouseup(this)" onclick="start()">Start</p>
+			<p id="recordTime" onmousedown="mousedown(this)" onmouseup="mouseup(this)" onclick="recordTime()">Record Time<br /><span id="maxcount">(Maximum 10 records)</span></p>
+			<p id="restart" onmousedown="mousedown(this)" onmouseup="mouseup(this)" onclick="restart()">Restart</p> -->
+		</div>	
+		<div id="displayPanel">
+			<p id="time1"></p>
+			<p id="time2"></p>
+			<p id="time3"></p>
+			<p id="time4"></p>
+			<p id="time5"></p>
+			<p id="time6"></p>
+			<p id="time7"></p>
+			<p id="time8"></p>
+			<p id="time9"></p>
+			<p id="time10"></p>
+		</div>	
+	</div>
+</body>
+</html>
